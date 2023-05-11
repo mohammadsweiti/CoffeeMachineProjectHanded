@@ -63,9 +63,11 @@ public class CoffeeBeans {
      
     }
     public void getGroundCoffee(double i){
-        this.check(i);
+        if (this.check(i)){
         this.getArabic().setExistingQuantity(this.getArabic().getExistingQuantity()-(i/2.0));
         this.getRoubusta().setExistingQuantity(this.getRoubusta().getExistingQuantity()-(i/2.0));
-        
+        }
+        else 
+            JOptionPane.showMessageDialog(null , "the machine is out of coffee");
     }
 }

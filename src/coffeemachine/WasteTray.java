@@ -49,7 +49,7 @@ public class WasteTray {
     }
         catch(FullWasteException e )
         {
-             this.level+=quantity;
+             this.level=this.capacity;
             JOptionPane.showMessageDialog(null, e.getMessage());
            // System.out.println(e.getMessage());
            return false;

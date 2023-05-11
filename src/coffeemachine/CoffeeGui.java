@@ -472,7 +472,7 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
         waterProgress.setValue((int)m.getWater().getLevel());
         waterExist.setText(m.getWater().getLevel()/m.getWater().getCapacity()*100+" %");
         TrashExistingProgressBar.setValue((int)m.getTrash().getLevel());
-         TrashLabel.setText((m.getTrash().getLevel()-14)/m.getTrash().getCapacity()*100+" % ");
+         TrashLabel.setText((m.getTrash().getLevel())/m.getTrash().getCapacity()*100+" % ");
          this.log();
          
          
