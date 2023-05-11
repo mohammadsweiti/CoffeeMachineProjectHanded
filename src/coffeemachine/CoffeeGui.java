@@ -16,7 +16,8 @@ import javax.swing.JOptionPane;
  */
 public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
     CoffeeMachineParent m = new CoffeeMachineParent();
-    public void log (){
+    
+   /* public void log (){
         try{
         File file = new File("coffeMachineState");
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file)) ;
@@ -25,7 +26,7 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
         catch(Exception ex){
             //JOptionPane.showMessageDialog(this , "write on file ");
         }
-    }
+    }*/
     /**
      * Creates new form CoffeeGui
      */
@@ -309,7 +310,7 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
                                             .addGroup(jPanel2Layout.createSequentialGroup()
                                                 .addComponent(coffeeProgress, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(10, 10, 10)
-                                                .addComponent(coffeExist))
+                                                .addComponent(coffeExist, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel2Layout.createSequentialGroup()
                                                 .addComponent(TrashExistingProgressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -386,6 +387,7 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
         waterProgress.setMinimum(0);
         waterProgress.setValue((int)m.getWater().getLevel());
         waterExist.setText(100+" %");
+        m.getLog().log("the macine is full Water ");
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -396,6 +398,8 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
         coffeeProgress.setMinimum(0);
         coffeeProgress.setValue((int )(m.getBeans().getArabic().getExistingQuantity()+m.getBeans().getRoubusta().getExistingQuantity()));
         coffeExist.setText( 100+" % ");
+        m.getLog().log("\nthe machine is full of Coffe \n");
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -404,6 +408,7 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
         String str = JOptionPane.showInputDialog(this, " the  quantity of water you entered in milleter  ");
         int q = Integer.parseInt(str);
          m.getWater().addWater(q);
+         m.getLog().log("\n we add "+q+" millter of water \n");
         }
         catch(Exception e ){
             JOptionPane.showMessageDialog(this, "you must enter an integer value");
@@ -414,6 +419,7 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
         waterProgress.setMinimum(0);
         waterProgress.setValue((int)m.getWater().getLevel());
         waterExist.setText(m.getWater().getLevel()/m.getWater().getCapacity()*100+" %");
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -421,7 +427,8 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
         try{
          String str = JOptionPane.showInputDialog(this, " the  quantity of cofee you entered in ghram  ");
         int q = Integer.parseInt(str);
-        m.getBeans().addCoffee(q);}
+        m.getBeans().addCoffee(q);
+        m.getLog().log("\nwe add "+ q+"of coffe\n ");}
         catch(Exception ex )
         {
             JOptionPane.showMessageDialog(this, "you must enter an integer value");
@@ -472,8 +479,8 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
         waterProgress.setValue((int)m.getWater().getLevel());
         waterExist.setText(m.getWater().getLevel()/m.getWater().getCapacity()*100+" %");
         TrashExistingProgressBar.setValue((int)m.getTrash().getLevel());
-         TrashLabel.setText((m.getTrash().getLevel())/m.getTrash().getCapacity()*100+" % ");
-         this.log();
+        TrashLabel.setText(((m.getTrash().getLevel())/m.getTrash().getCapacity()*100)+" % ");
+         m.getLog().log(" \nafter making a cup : \n the existing coffe is  "+ exist + "\n existing water is " + m.getWater().getLevel()+ "\n waste tray contain "+m.getTrash().getLevel()+"the giding degree "+ m.getGlind().getDegree()+"\n");
          
          
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -483,6 +490,7 @@ public class CoffeeGui extends javax.swing.JFrame  implements Serializable{
         m.getTrash().clear();
         TrashExistingProgressBar.setValue((int)m.getTrash().getLevel());
          TrashLabel.setText(m.getTrash().getLevel()/m.getTrash().getCapacity()+" % ");
+         m.getLog().log("\nthe trash is cleaned\n ");
     }//GEN-LAST:event_jButton2ActionPerformed
      
     /**

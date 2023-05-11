@@ -1,0 +1,17 @@
+the macine is full Water 
+the machine is full of Coffe 
+ 
+after making a cup : 
+ the existing coffe is  1986.0
+ existing water is 2940.0
+ waste tray contain 14.0the giding degree 10.0
+ 
+after making a cup : 
+ the existing coffe is  1972.0
+ existing water is 2720.0
+ waste tray contain 28.0the giding degree 10.0
+ 
+after making a cup : 
+ the existing coffe is  1958.0
+ existing water is 2500.0
+ waste tray contain 42.0the giding degree 10.0

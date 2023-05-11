@@ -3,20 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/CoffeeBeans.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/Glinder.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/Arabica.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/StartWindowGui.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/GreatBeans.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/OutOfWaterException.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/CoffeeMachineParent.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/CoffeeGui.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/OutOfCoffeeBeansException.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/Water.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/Robusta.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/FullWasteException.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/WasteTray.java</file>
-            <file>file:/C:/Users/ahmad/OneDrive/Desktop/repo/test-/src/coffeemachine/QuantityOutOfCapacity.java</file>
+            <file>file:/C:/Users/ttc/Desktop/coffee%20Machine%20project%20final%20edit/test-/src/coffeemachine/CoffeeMachineParent.java</file>
+            <file>file:/C:/Users/ttc/Desktop/coffee%20Machine%20project%20final%20edit/test-/src/coffeemachine/CoffeeBeans.java</file>
+            <file>file:/C:/Users/ttc/Desktop/coffee%20Machine%20project%20final%20edit/test-/src/coffeemachine/LoggerStores.java</file>
+            <file>file:/C:/Users/ttc/Desktop/coffee%20Machine%20project%20final%20edit/test-/src/coffeemachine/WasteTray.java</file>
+            <file>file:/C:/Users/ttc/Desktop/coffee%20Machine%20project%20final%20edit/test-/src/coffeemachine/FullWasteException.java</file>
+            <file>file:/C:/Users/ttc/Desktop/coffee%20Machine%20project%20final%20edit/test-/src/coffeemachine/logger.java</file>
+            <file>file:/C:/Users/ttc/Desktop/coffee%20Machine%20project%20final%20edit/test-/src/coffeemachine/Arabica.java</file>
+            <file>file:/C:/Users/ttc/Desktop/coffee%20Machine%20project%20final%20edit/test-/src/coffeemachine/CoffeeMachine.java</file>
+            <file>file:/C:/Users/ttc/Desktop/coffee%20Machine%20project%20final%20edit/test-/src/coffeemachine/CoffeeGui.java</file>
         </group>
     </open-files>
 </project-private>

@@ -15,12 +15,30 @@ public class CoffeeMachineParent {
     private CoffeeBeans beans;
     private Glinder glind;
     private  WasteTray trash;
+    private logger log ;
 
+    public logger getLog() {
+        return log;
+    }
+
+    public void setLog(logger log) {
+        this.log = log;
+    }
+
+    public CoffeeMachineParent(Water water, CoffeeBeans beans, Glinder glind, WasteTray trash, logger log) {
+        this.water = water;
+        this.beans = beans;
+        this.glind = glind;
+        this.trash = trash;
+        this.log = log;
+    }
+    
     public CoffeeMachineParent() {
         water = new Water(0, 0, 3000);
         beans = new CoffeeBeans(new Arabica(0,1000), new Robusta(0,1000));
         glind = new Glinder(0);
         trash  = new WasteTray(100, 0);
+        log = new LoggerStores("machinestate.txt ");
     }
 
     public CoffeeMachineParent(Water water, CoffeeBeans beans, Glinder glind, WasteTray trash) {
